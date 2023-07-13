@@ -1,0 +1,132 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --second-color: #1e90ff;
+    --main-color: #5f5ff6;
+}
+body {
+    background: linear-gradient(
+        to right,
+        #5f5ff6,
+        #1e90ff
+    );
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    text-align: center;
+    border-radius: 7px;
+    margin: 6rem auto;
+    width: 30rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 11rem;
+}
+
+.main-heading {
+    color: #29297e;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin: 1.5rem;
+   
+}
+
+input {
+    font-size: 1rem;
+    margin-left: 1rem;
+    outline: none;
+    border: none;
+    background: transparent;
+
+}
+
+button{
+    outline: none;
+    border: none;
+    padding: .7rem 2.5rem;
+    font-size: 1rem;
+    border-radius: 40px;
+    background-color: #ff5945;
+    color: white;
+
+}
+
+.input-container {
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 2rem;
+    background-color: rgba(0, 0, 0, .06);
+}
+.note-title {
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    color: #29297e;
+    font-weight: 500;
+}
+
+.note-field {
+    position: relative;
+    text-align: justify;
+    color: #10103c;
+    padding: 2rem 2rem;
+    margin: 1.5rem 2rem;
+    outline: none;
+    border-radius: 8px;
+    background: #efefef;
+    box-shadow:  22px 22px 40px #bebebe,
+        -22px -22px 40px #ffffff;
+    
+}
+
+.note-field .icon {
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+    color: #1c055f;
+    width: 2rem;
+    cursor: pointer;
+}
+
+
+@media(max-width: 32rem) {
+    .main-heading {
+        font-size: 1.4rem;
+    }
+    button {
+        padding: .7rem 1.3rem;
+    }
+    .container {
+        width: 21.5rem;
+    }
+    .input-container {
+        margin-inline: .9rem;
+    }
+
+}
+
+@media(max-width: 21rem) {
+    .main-heading {
+        color: red;
+        font-size: 1.4rem;
+    }
+    button {
+        font-size: .9rem;
+        padding: .7rem .3rem;
+    }
+    .input-container {
+        margin-inline: .2rem;
+    }
+    .container {
+        width:18.5rem;
+    }
+}
+
+
+
